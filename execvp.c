@@ -25,8 +25,9 @@ int main(int argc, char *argv[]) {
 	 for (int i=0;i<ARGCNT;i++) { 
  		printf("i=%d args[i]=%s\n",i,*(args + i));
  	}
- 	
+ 	// store the value of execvp only if the function not executed
  	int status = execvp(args[0], args);
  	printf("STATUS CODE=%d\n",status);
+ 	
 	return 0;
 }
