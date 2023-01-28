@@ -3,6 +3,7 @@
 #include <string.h>
 
 int main(int argc, char *argv[]) {
+	//pointer to args 
 	char* myarg;
 	char ** ourarray = malloc(sizeof(char *) * argc);
 	int j=argc-1;
